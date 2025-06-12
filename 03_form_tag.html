@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* inline요소 -> 자동 잘바꿈 (X)
+        -> content크기만큼만 잡힌다(크기조절 못한다)
+        block 요소 
+        : 1칸을 모두 차지하는 속성을 가지고 있음(크기조절 가능하다)
+        */
+        label{
+            display: inline-block;
+            width: 110px;
+        }
+        textarea{
+            width: 275px;
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- form tag용도 : 서버로 데이터를 전송할 목적사용
+         1. form attribute
+            action : 전송대상 = form 안에 있는 데이터를 누구에게 보낼거냐?-> 생략이 될시 자신에게 전송 
+            method : 전송방식
+                    GET (기본값) : 정보를 넘길때 QueryString방식
+                    http://127.0.0.1:5500/03_form_tag.html?111=%EA%B8%B8%EB%8F%99%EC%95%84
+                    POST : 전달데이터가 숨겨서 전달이 되는 방식
+    -->
+    <form action="" method="GET">
+        <label for="">이름:</label>
+        <input type="text" id="irum"name="name" placeholder="이름을 입력하세요" required><br>
+        <label for="">아이디:</label>
+        <input type="text" name="id" placeholder="아이디를 입력하세요" required><br>
+        <label for="">비밀번호:</label>
+        <input type="password" name="pwd" placeholder="비밀번호를 입력하세요" required><br>
+        <label for="">이메일:</label>
+        <input type="text" name="email" placeholder="Email을 입력하세요" required><br>
+        <label for="">생년월일</label>
+        <input type="date" name="birthday"><br>
+        <label for="">좋아하는 색상</label>
+        <input type="color" name="favcolor"><br>
+        <label for="">성별:</label>
+        <input type="radio" name="gender" value="남자" checked>남자
+        <input type="radio" name="gender" value="여자" >여자<br> 
+
+        <label for="">취미:</label>
+        <input type="checkbox" name="hobby" valeu="독서">독서
+        <input type="checkbox" name="hobby" valeu="운동">운동
+        <input type="checkbox" name="hobby" valeu="영화">영화
+        <input type="checkbox" name="hobby" valeu="게임">게임
+        <input type="checkbox" name="hobby" valeu="낚시">낚시<br>
+
+        <label for="">혈액형:</label>
+        <select name="blood">
+            <option value="A">A형</option>
+            <option value="B">B형</option>
+            <option value="C">C형</option>
+            <option value="AB">AB형</option>
+        </select>
+        <br>
+        <label for="">자기소개:</label> <br>
+        <textarea name="intro" rows="5" placeholder="드립 금지"></textarea>
+        <hr>
+        <br>
+        <h4>웹표준을 준수하지 않는 컨트롤</h4>
+        <label for="">첨부파일(사진):</label> 
+        <input type="date" name="birthday"><br>
+
+        <label for="">좋아하는 색상 </label>
+        <input type="color" name="mycolor"><br>
+        <hr>
+        <br>
+        <input type="submit" value="보내기">
+        <input type="button" value="전송하기1" onclick="this.form.submit();">
+
+        <button>전송하기2</button>
+    </form>
+</body>
+</html>

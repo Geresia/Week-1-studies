@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS(Cascading Style Sheets) 
+        1.inline방식 : 해당태그내에 직접작성
+        2.internal방식(선언적방식) : 해당 페이지내에 선언적으로 작성
+        3.external방식(css분리)
+        4.문법
+        선택자{ 
+                속성 : 값;
+                속성 : 값;
+        }    
+    -->
+    <!--2.internal(선언적방식)  -->
+    <style>
+        /* Universal Selector(모든요소) */
+        *{
+            margin: 0;
+        }
+
+        body{
+            border: 3px solid pink;
+        }
+        p{
+            border: 2px solid cyan;
+            margin: 10px;
+            padding: 5px;
+            box-shadow: 1px 2px 3px black;
+        }
+    </style>
+    <!-- 3.external방식 -->
+    <link rel="stylesheet" href="./css/mystyle.css">
+</head>
+<body>
+    <!-- CSS inline적용 -->
+    <p style="color:tomato">배고파 근데 점심이 아직 1시간 30분남았다</p>
+    
+    <p>배고파 근데 점심이 아직 1시간 29분남았다</p>
+    <p>배고파 근데 점심이 아직 1시간 28분남았다</p>
+    <p>배고파 근데 점심이 아직 1시간 27분남았다</p>
+    <p>배고파 근데 점심이 아직 1시간 26분남았다</p>
+    <p class="a">배고파 근데 점심이 아직 1시간 25분남았다</p>
+    <p class="a">물배나 채워야지 ||| ? : "코리아 워터 딜리셔스"</p>
+</body>
+</html>  

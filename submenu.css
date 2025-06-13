@@ -1,0 +1,20 @@
+.sub-menu{
+    list-style: none;
+    
+}
+
+.sub-menu > li > a{
+    display: block;
+    border: 1px solid blue;
+    text-decoration: none;
+    width: 120px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.sub-menu > li > a:hover{
+    color: red;
+    border-color: red;
+    box-shadow: 3px 3px 3px black;
+    
+}

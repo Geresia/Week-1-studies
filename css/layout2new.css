@@ -1,0 +1,55 @@
+/* Universal Select */
+*{
+    margin: 0;
+}
+
+#main-box{
+    width: 800px;
+    height: 600px;
+    background-color: beige;
+    /* Margin auto = Margin left + Auto가 동일한 크기로 잡힌다 
+        결과적으로 중앙배치됨
+    */
+    margin: auto;
+    background-color: rgb(163, 163, 163);
+}
+#header{
+    height: 100px;
+    background-color: lightblue;
+}
+#side{
+    width: 320px;
+    height: auto;
+    background-color: lightgreen;
+    min-height: 400px;
+    float: left;
+}
+.gongji{
+    width: 27%;
+    height: 177px;
+    border: 1px solid black;
+    float: left;
+    margin: 5px;
+    border-radius: 100px;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+.box1{
+    background-color: lightsalmon;
+}
+.box2{
+    background-color: lightgoldenrodyellow;
+}
+.box3{
+    background-color: rgb(251, 131, 79);
+}
+.box4{
+    background-color: rgb(152, 94, 94);
+}
+#footer{
+    height: 100px;
+    background-color: rgb(255, 187, 231);
+    /* float해지 작업 */
+    clear: left;
+}

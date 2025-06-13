@@ -17,29 +17,44 @@
     background-color: aqua;
 }
 #side{
-    width: 20%;
+    width: 320px;
     height: auto;
     background-color: green;
     min-height: 400px;
     float: left;
 }
-#content{
-    width: 60%;
+#gongji{
+    width: 240px;
     height: auto;
-    background-color: brown;
-    min-height: 400px;
-    float: right;
+    background-color: red;
+    height: 200px;
+    float: left;
 }
-#side2{
-    width: 20%;
+#choigen{
+    width: 240px;
     height: auto;
-    background-color: green;
-    min-height: 400px;
-    float: right;
+    background-color: blue;
+    height: 200px;
+    float: left;
 }
+#uuong{
+    width: 240px;
+    height: auto;
+    background-color: blue;
+    height: 200px;
+    float: left;
+}
+#site{
+    width: 240px;
+    height: auto;
+    background-color: red;
+    height: 200px;
+    float: left;
+}
+
 #footer{
     height: 100px;
-    background-color: black;
+    background-color: cyan;
     /* float해지 작업 */
     clear: left;
 }

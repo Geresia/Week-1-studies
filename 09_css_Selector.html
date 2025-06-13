@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS Selector
+            :style적용시킬 대상을 지정
+            1.Universal Selector: * (모든요소(Element))
+            2.Element(tag) Selector : Tag이름
+            3.Class selector        : <p class="class-name">
+                                    | .class-name{ color:red; }
+            4. Id Selector          : <p id="song-1"
+                                        #song-1 { color:red }
+                Identifier(고유속성값)
+                ID Selector > Class Selector > Element tag > Universal Selector
+            5. Attribute Selector   :   <input type="button">
+                                        attribute => type="button"
+            6. Child Selector       :   ul -> li { color:red;}
+                                        ul    li { color:red;} <- 모든 후손 Element적용
+                <ul>
+                    <li>수박</li> <- child element
+                    <li>사과</li> <- child element
+                    <li>참외</li> <- child element
+                    <li>
+                        <ul>
+                            <li>성주참외</li>
+                            <li>일본참외</li>
+                            <li>서울참외</li>
+                        </ul>
+                    </li> 
+                -->                            
+     <style>
+        /* Universal Selector */
+        *{
+            margin: 0;
+        }
+        /* Element Select */
+        p{
+            border: 1px solid lightgoldenrodyellow;
+            background-color: black;
+            color: white;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        /* Class Selector */
+        .outside{
+            border-color: yellow;
+            color: lightblue;
+        }
+
+        /* id selector */
+        #home{
+            color:cyan;
+            text-shadow: 1px 1px 1px lightcyan;
+        }
+
+        #paik_sajangnim{
+            color: black;
+            text-shadow: 1px 1px 1px white;
+        }
+        /* Attribute Selector */
+        input[type='button']{
+            width:150px;
+            height: 25px;
+        }
+        input[value ='끝']{
+            background-color: blue;
+            color: white;
+        }
+     </style>
+</head>
+<body>
+    <p id="home">오늘 저녁은 집가서 먹어야지</p>
+    <p id="paik_sajangnim">금요일 저녁은 역전우동 가서 덮밥 3500원</p>
+    <p class="outside">토요일은 이모따라서 누릉지 백숙 으 늙으니</p>
+    <p class="outside">일요일은 초밥 먹어야지 딜리셔스</p>
+    <img src="./image/dancing dog.PNG" alt="주인이랑 협상이는 개쉑" width="150px" height="150px"> <br>
+    <h2>마! 밥 가온나!</h2>
+    <input type="text" id="msg"> <br>
+    <br>
+    <input type="button" value="점심 맛있게 드세요!">
+    <input type="button" value="끝">
+
+
+</body>
+</html>

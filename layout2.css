@@ -1,0 +1,60 @@
+/* Universal Select */
+*{
+    margin: 0;
+}
+
+#main-box{
+    width: 800px;
+    height: 600px;
+    background-color: beige;
+    /* Margin auto = Margin left + Auto가 동일한 크기로 잡힌다 
+        결과적으로 중앙배치됨
+    */
+    margin: auto;
+}
+#header{
+    height: 100px;
+    background-color: aqua;
+}
+#side{
+    width: 320px;
+    height: auto;
+    background-color: green;
+    min-height: 400px;
+    float: left;
+}
+#gongji{
+    width: 240px;
+    height: auto;
+    background-color: red;
+    height: 200px;
+    float: left;
+}
+#choigen{
+    width: 240px;
+    height: auto;
+    background-color: blue;
+    height: 200px;
+    float: left;
+}
+#uuong{
+    width: 240px;
+    height: auto;
+    background-color: blue;
+    height: 200px;
+    float: left;
+}
+#site{
+    width: 240px;
+    height: auto;
+    background-color: red;
+    height: 200px;
+    float: left;
+}
+
+#footer{
+    height: 100px;
+    background-color: cyan;
+    /* float해지 작업 */
+    clear: left;
+}

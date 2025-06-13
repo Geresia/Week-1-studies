@@ -1,0 +1,32 @@
+body{
+    width: 102%;
+    margin: 0%;
+    text-align: center;
+}
+#main-box{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+        }
+#main-box > ul > li{
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    margin: 20px;
+}
+#main-box > ul{
+    
+    text-align: center;
+}
+#main-box > ul > li > a{
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+#song1, #song2, #song3, #song4{
+    
+    text-align: center;
+    padding: 110px;  
+}

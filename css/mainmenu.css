@@ -1,0 +1,37 @@
+#main-menu{
+    list-style: none;    
+}
+
+/* 
+    [block요소]
+    1. 1줄을 모두차지(부모크기를 물려받는다)
+    2. 크기조절 가능하다
+    [inline요소]
+    1.컨텐츠 크기만큼만 차지
+    2.크기조절 불가능
+
+    display: block or inline or inline-block
+            none(숨김)
+
+*/
+#main-menu > li{
+    display: inline-block;
+    width: 75px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+#main-menu > li > a{
+    display: block;
+    text-decoration: none;
+    color: rgb(109, 197, 208);
+    border:1px solid purple;
+    cursor: pointer;
+}
+
+/* hover: 마우스가 올라가면 */
+#main-menu > li > a:hover{
+    color: blue;
+    border: 1px solid red;
+    box-shadow: 3px 3px 3px black;
+}

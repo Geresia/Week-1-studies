@@ -1,0 +1,7 @@
+
+/* class selector : class="25min" */
+
+p.a{
+    color: darkcyan;
+    font-weight: bold;
+}
